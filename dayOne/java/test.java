@@ -1,6 +1,7 @@
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
+
 public class PracticeTest{
     
     @Test
@@ -16,11 +17,15 @@ public class PracticeTest{
     
     
     
-    
-    
     /*
 javac -cp "junit-platform-console-standalone-1.11.0.jar:out" -d out PositiveIntegersRange.java PositiveIntegersRangeTest.java
 
 java -cp "junit-platform-console-standalone-1.11.0.jar:out" org.junit.platform.console.ConsoleLauncher --scan-class-path
 
 */
+
+
+
+
+
+        
