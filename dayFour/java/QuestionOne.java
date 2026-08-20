@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class QuestionOneApp{
+public class QuestionOne{
 
     public static void main(String... args){
         Scanner input = new Scanner(System.in);
@@ -51,7 +51,7 @@ public class QuestionOneApp{
             System.out.print("Withdrawal Amount: ");
             int withdrawal = input.nextInt();
             if (withdrawal < balance){
-                balance += deposit;
+                balance += withdrawal;
                 System.out.println("Withdrew: ₦" + withdrawal + " | New balance is: ₦" + balance );
                 }
             else{

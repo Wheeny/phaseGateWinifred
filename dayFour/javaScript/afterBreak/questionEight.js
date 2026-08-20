@@ -1,0 +1,19 @@
+let sum = 0;
+for(let count = 0; count < 10; count++){
+    const scanner = require("prompt-sync")();
+    let score = Number(scanner ("Enter score: "));
+    if(score > 0 && score < 100){
+        sum += score;
+        }
+    else{
+        console.log("Invalid Input");
+        }
+        }
+        
+   console.log(sum);
+    
+
+
+
+
+

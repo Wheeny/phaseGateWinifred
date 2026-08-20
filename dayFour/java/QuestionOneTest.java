@@ -8,7 +8,7 @@ public class QuestionOneTest{
        
         
         int expected_balance = 0;
-        int actual_balance = QuestionOne.check_balance(balance);
+        int actual_balance = QuestionOne.check_balance(0);
         
         assertEquals(expected_balance, actual_balance);
     }
