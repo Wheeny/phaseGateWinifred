@@ -77,6 +77,7 @@ public class Functions{
         while (number != 0){
         lastDigit = number % 10;
             reverse = (reverse * 10) + lastDigit;
+            number = number/10;
             }
         return reverse;       
 
@@ -109,7 +110,6 @@ public class Functions{
         System.out.println(simpleInterestCalculator(20,3,5));
          System.out.println(rectangleArea(5,4));
           System.out.println(reverseAnumber(57));
-           System.out.println(evenNumberCheck(20));
 //            System.out.println(stringFrequency("Happy"));
 
     
