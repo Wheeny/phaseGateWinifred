@@ -7,11 +7,42 @@ public class QuestionOneTest{
     public void testThatAccountBalanceIsZeroDuringCreation(){
        
         
-        int expected_balance = 0;
-        int actual_balance = QuestionOne.check_balance(0);
+        int expectedBalance = 0;
+        int actualBalance = QuestionOne.checkBalance(0);
         
-        assertEquals(expected_balance, actual_balance);
+        assertEquals(expectedBalance, actualBalance);
     }
     
-   } 
+    
+//    @Test
+//    public void testthatDepositedAmountIsnotLessThanZero(){
+//       
+//        int balance = 0;
+//        int depositedAmount = 1000;
+//        int expectedBalance = 1000;
+//        int actualBalance = deposit(depositedAmount, balance);
+//        assertEquals(expectedBalance, actualBalance);
+//    }
+    
+    
+    
+    
+//    @Test
+//    public void testThatWithdrawnAmountIsnotMoreThanThebalance(){
+//       
+//        int balance = 1000;
+//        int withdrawnAmount = 500;
+//        int expectedBalance = 500
+//        int actualBalance = withdrawal(withdrawnAmount, balance);
+//        assertEquals(expectedBalance, actualBalance);
+//    }
+    
+    
+    } 
+ 
+ 
+ 
+ 
+ 
+ 
  

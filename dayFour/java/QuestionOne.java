@@ -78,24 +78,37 @@ public class QuestionOne{
              
          }       
     
-    
-    
-    
+
     
         public static int checkBalance(int balance){
         return balance;
-    }
+        }
 
 
-        public static int deposit(int deposited_amount, int balance){
-        if (deposited_amount > 0){
-        balance += deposited_amount; }
+
+//        public static int deposit(int depositedAmount, int balance){
+//        if (depositedAmount > 0){
+//            balance += depositedAmount; }
+//       
+//        return balance;
+//    
+//        }
        
-        return balance;
-    
-    
-       }
+       
+//
+//        public static int withdrawal(int withdrawnAmount, int balance){
+//        if (withdrawnAmount <= balance){
+//        balance -= withdrawnAmount; }
+//       
+//        return withdrawalTransactions(withdrawnAmount, balance);
+//    
+//       }
         
+        
+        
+      
         
    }     
+
+
 
