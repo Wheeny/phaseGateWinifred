@@ -2,12 +2,12 @@ public class Functions{
    
 
     public static int sumTwoNumbers(int firstNumber, int secondNumber){
-       return int firstNumber + int secondNumber;
+       return firstNumber + secondNumber;
     }
   
   
   
-    public static int evenNumberCheck(int number){
+    public static boolean evenNumberCheck(int number){
         if(number % 2 == 0){
             return true;
         }
@@ -18,13 +18,15 @@ public class Functions{
     
     
     public static int square(int number){
-        return number**2;
+        int square = 0;
+        square = number * number;
+            return square;
     }
         
         
      
     public static double temperatureConverter(double temperature){    
-        tempFarenheit = 0;
+        double tempFarenheit = 0;
         tempFarenheit = (temperature * (9/5)) + 32;
             return tempFarenheit;
     }
@@ -32,16 +34,18 @@ public class Functions{
 
     
     
-    public ststic int largestNumber(int firstNumber, secondNumber, int thirdNumber){
+    public static int largestNumber(int firstNumber, int secondNumber, int thirdNumber){
         int largestNumber = 0;
             if(firstNumber > secondNumber && firstNumber > thirdNumber){
                 largestNumber = firstNumber;}
                 
             else if(secondNumber > firstNumber && secondNumber > thirdNumber){
-                largestNumber = SecondNumber; }
+                largestNumber = secondNumber; }
                 
             else{
                 largestNumber = thirdNumber;}
+                
+           return largestNumber;     
                 
       }    
                      
@@ -58,7 +62,7 @@ public class Functions{
      
      
      
-     public static int rectangleArea(int length; int breadth){
+     public static int rectangleArea(int length, int breadth){
         int area = 0;
         area = length * breadth;
             return area;
@@ -80,24 +84,24 @@ public class Functions{
           
           
        
-    public static int stringFrequency(String word)
-    int counter = 0;
-   
-    for(int count = 0; count < word.length-1; count++){
-        if(word.charAt[count] == word.charAt[count + 1]){
-            counter++;
-                    }
-                }
-        return counter;
-   
-   
-   
+//    public static int stringFrequency(String word){
+//    int counter = 0;
+//   
+//    for(int count = 0; count < word.length-1; count++){
+//        if(word.charAt[count] == word.charAt[count + 1]){
+//            counter++;
+//                    }
+//                }
+//        return counter;
+//   
+//   }
+//   
    
    public static void main(String[] args){
 
 //    int firstNumber = 5;
 //    int secondNumber = 4;
-    System.out.print(lnsumTwoNumbers(5,4));
+    System.out.println(sumTwoNumbers(5,4));
     System.out.println(evenNumberCheck(20));
      System.out.println(square(4));
       System.out.println(temperatureConverter(20));
@@ -106,7 +110,7 @@ public class Functions{
          System.out.println(rectangleArea(5,4));
           System.out.println(reverseAnumber(57));
            System.out.println(evenNumberCheck(20));
-            System.out.println(stringFrequency("Happy"));
+//            System.out.println(stringFrequency("Happy"));
 
     
 
