@@ -127,7 +127,7 @@ public class ParkingSystem{
               occupiedCount++;  
             }
         }   
-        return "There are " + emptyCount + " Empty Slots Left!";
+        return "There are " + emptyCount + " Empty Slots Left! and There are " + occupiedCount + " Occupied !";
     }
     
     
