@@ -1,9 +1,6 @@
 
 balance = 0
-transactions = """
-
-"""
-
+transactions = []
 while True:
     menu = """
     
@@ -28,6 +25,9 @@ while True:
             if deposit >= 0:
                 balance += deposit
                 print(f"Deposited: ₦{deposit} | New balance is: ₦{balance}")
+                transactions.append(deposit)
+                transactions.append(balance)
+                
             else:
                 print("Invalid Deposit")
         case 2: 
@@ -35,10 +35,13 @@ while True:
             if withdrawal < balance:
                 balance -= withdrawal
                 print(f"Withdrew: ₦{withdrawal} |New balance is: ₦{balance}")
+                
             else:
-                print("Withdrawal failed. Insufficient Funds")     
+                print("Withdrawal failed. 4Insufficient Funds")     
         case 3: 
             print(f"Transaction History: {transactions}")
+#            for num in range(len(transactions) - 1):
+#                print(f"deposited {transactions[num]} new balance {transactions[num]}]")                
         case 4: 
             print("Thank you for using Transaction Log App!")
             print(f"Your final balance is: ₦{balance}")
@@ -49,7 +52,10 @@ while True:
     
     
     
-    
+def transactions(deposit, balance):
+    transactions.append(deposit)
+    transactions.append(balance)
+    return transaction
     
 def check_balance(balance):
     return balance
